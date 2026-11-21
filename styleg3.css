@@ -1,0 +1,598 @@
+/* Global Styles: Nailong-Inspired 60-30-10 Palette with Warm Secondary Sunburst Yellow (#FBC56B) */
+
+:root {
+  --cream: #FFF8E7;         /* 60% Page Background */
+  --yellow: #F9AF3F;        /* 30% Header & Section Tabs */
+  --yellow-light: #FBC56B;  /* Secondary sunburst ray */
+  --pink: #FBA1C4;          /* 10% Accent Color */
+  --brown: #4A2223;         /* Ink, Text & Sticker Borders (11.6:1 contrast on cream) */
+
+  --font-heading: "Poppins", "Arial", "Helvetica", sans-serif;
+  --font-body: "Nunito", "Trebuchet MS", "Verdana", sans-serif;
+
+  --sticker: 0.3rem 0.3rem 0 var(--brown);
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--brown);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.3;
+  margin: 0 0 0.85rem;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0.12rem 0.12rem 0 var(--cream);
+}
+
+.stage-name {
+  display: inline-block;
+  font-style: italic;
+  color: var(--brown);
+  text-shadow: 0.15rem 0.15rem 0 var(--cream);
+}
+
+/* "Mabuhey!" tilted sticker above the name */
+.greeting {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 0.85rem;
+  padding: 0.15rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: none;
+  background-color: var(--pink);
+  background-image: linear-gradient(135deg, var(--pink) 0%, #FFD6E8 100%);
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.6rem;
+  box-shadow: var(--sticker);
+  transform: rotate(-3deg);
+}
+
+/* h2: yellow tab label */
+h2 {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  background-color: var(--yellow);
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0 var(--brown);
+  padding: 0.2rem 0.95rem;
+}
+
+/* h3: Clean editorial project title with a subtle pink left accent bar */
+h3 {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--brown);
+  border-left: 0.3rem solid var(--pink);
+  padding-left: 0.75rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* Pink bottom highlighter underline */
+em {
+  font-style: italic;
+  border-bottom: 0.2rem solid var(--pink);
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+
+/* Helpers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 30;
+  padding: 0.5rem 1rem;
+  background-color: var(--pink);
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.5rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.legend {
+  font-size: 0.9375rem;
+}
+
+
+/* Page Frame */
+.wrap {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+/* HEADER: Warm Nailong yellow sunburst with a subtle, sunlit cream center */
+header {
+  background-color: var(--yellow);
+  background-image:
+    radial-gradient(circle at 50% 35%, rgba(255, 248, 231, 0.45) 0%, rgba(249, 175, 63, 0.15) 55%, transparent 80%),
+    repeating-conic-gradient(
+      from 0deg at 50% 100%,
+      var(--yellow) 0 7.5deg,
+      var(--yellow-light) 7.5deg 15deg
+    );
+  border-bottom: 0.25rem solid var(--brown);
+}
+
+header .wrap {
+  padding-top: 2.25rem;
+  padding-bottom: 1.75rem;
+}
+
+.tagline {
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 700;
+  background-color: var(--pink);
+  border: 0.15rem solid var(--brown);
+  border-radius: 2rem;
+  padding: 0.2rem 1.05rem;
+  text-align: center;
+}
+
+
+/* NAVIGATION: sticky bar */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: var(--brown);
+  border-bottom: 0.2rem solid var(--pink);
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.5rem;
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0.45rem 1rem;
+  list-style: none;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.2rem 0.85rem;
+  border-radius: 2rem;
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background-color: var(--yellow);
+  color: var(--brown);
+}
+
+.site-nav a:focus-visible {
+  outline: 0.2rem solid var(--pink);
+  outline-offset: 0.15rem;
+}
+
+
+main {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem 2rem;
+}
+
+/* Generous whitespace between sections (no dotted lines) */
+main section {
+  padding: 2.75rem 0;
+}
+
+main section:first-child {
+  padding-top: 2rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--yellow);
+  border-top: 0.25rem solid var(--brown);
+  text-align: center;
+}
+
+footer p {
+  margin: 0 0 0.85rem;
+}
+
+
+/* Links */
+a {
+  color: var(--brown);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.2rem;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  background-color: var(--pink);
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 0.2rem solid var(--brown);
+  outline-offset: 0.2rem;
+  background-color: var(--pink);
+}
+
+
+/* BACK TO TOP */
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  padding: 0.35rem 0.9rem;
+  background-color: var(--pink);
+  border: 0.15rem solid var(--brown);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0 var(--brown);
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  background-color: var(--yellow);
+}
+
+
+/* ABOUT ME: Static Polaroid frame + Cream Bio Card + Catchphrase Callout */
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.profile-photo {
+  flex: 0 0 15.5rem;
+  margin: 0;
+  padding: 0.6rem 0.6rem 0.75rem;
+  background-color: var(--cream);
+  border: 0.18rem solid var(--brown);
+  border-radius: 0.9rem;
+  box-shadow: 0.4rem 0.4rem 0 var(--pink);
+  transform: rotate(-1.5deg);
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.55rem;
+}
+
+.profile-photo figcaption {
+  margin-top: 0.6rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brown);
+}
+
+.profile-description {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 1.5rem;
+  background-color: var(--cream);
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.9rem;
+  box-shadow: var(--sticker);
+}
+
+.profile-description p:last-child {
+  margin-bottom: 0;
+}
+
+.catchphrase {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1.1rem;
+  background-color: var(--yellow-light);
+  border-left: 0.35rem solid var(--pink);
+  border-top: 0.12rem solid var(--brown);
+  border-right: 0.12rem solid var(--brown);
+  border-bottom: 0.12rem solid var(--brown);
+  border-radius: 0 0.65rem 0.65rem 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.catchphrase p {
+  margin: 0;
+}
+
+
+/* THINGS I LOVE: Static tilted cards with yellow outline & brown shadow */
+.things-i-love-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.love-card {
+  flex: 1 1 15rem;
+  padding: 1.15rem 1.25rem;
+  background-color: var(--cream);
+  border: 0.15rem solid var(--yellow);
+  border-radius: 0.75rem;
+  box-shadow: var(--sticker);
+}
+
+.love-card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.love-card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.card-title {
+  margin: 0 0 0.75rem;
+  padding-left: 0;
+  border-left: 0;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.love-card ul {
+  margin: 0;
+  padding-left: 1.35rem;
+}
+
+.love-card li {
+  margin-bottom: 0.5rem;
+}
+
+.love-card li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* PASSION PROJECTS: Subtle inline metadata & compact media previews */
+.passion-project {
+  margin-top: 2rem;
+}
+
+.project-meta {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.project-media-frame {
+  max-width: 34rem;
+  background-color: var(--cream);
+  border: 0.18rem solid var(--brown);
+  border-radius: 0.75rem;
+  padding: 0.4rem;
+  box-shadow: 0.3rem 0.3rem 0 var(--yellow);
+  margin: 0.75rem 0 2.25rem;
+}
+
+.poster-frame {
+  max-width: 24rem;
+}
+
+.image-poster img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.media-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+
+/* CONTACT: Unicode symbols & underlined account links only */
+.line-2 {
+  display: block;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0.95rem 1.2rem;
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.75rem;
+  box-shadow: var(--sticker);
+}
+
+.contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+
+.contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-symbol {
+  display: inline-block;
+  width: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.contact-label {
+  font-weight: 700;
+}
+
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ext-symbol {
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+
+/* DESIGN NOTES (footer) */
+.design-notes {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: left;
+  background-color: var(--cream);
+  border: 0.15rem solid var(--brown);
+  border-radius: 0.75rem;
+}
+
+.design-notes summary {
+  padding: 0.55rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.design-notes ul {
+  margin: 0;
+  padding: 0 0.9rem 0.75rem 2.1rem;
+}
+
+.design-notes li {
+  margin-bottom: 0.4rem;
+}
+
+
+/* Responsive Mobile Layout */
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 6.75rem;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .profile-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 15.5rem;
+  }
+
+  .profile-description {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .things-i-love-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .love-card {
+    flex: 0 0 auto;
+  }
+}

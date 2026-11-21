@@ -12,18 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&amp;family=Nunito:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 
     <!-- External stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleg3.css">
 </head>
 
 <body id="top">
-
-    <!-- Icon sprite: drawn once here, reused with <use>. Hidden from assistive tech. -->
-    <svg class="sprite" aria-hidden="true" width="0" height="0">
-        <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
-        <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
-        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
-        <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></symbol>
-    </svg>
 
     <!-- Skip link for keyboard users -->
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -36,12 +28,12 @@
         </div>
     </header>
 
-    <!-- Sticky navigation bar-->
+    <!-- Sticky navigation -->
     <nav class="site-nav" aria-label="Main">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#love">Things I Love</a></li>
-            <li><a href="#projects">Passion Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -82,7 +74,7 @@
             </div>
         </section>
 
-        <!-- Section 3: Things I Love (W3C valid: <span class="card-title"> inside <summary>) -->
+        <!-- Section 3: Things I Love -->
         <section id="love" aria-labelledby="love-heading">
             <h2 id="love-heading">Things I Love</h2>
             <p>Here are the things I love, <strong>my Triple F:</strong> FF Hooray!</p>
@@ -117,14 +109,14 @@
             </div>
         </section>
 
-        <!-- Section 4: Passion Projects (subtle inline metadata, low padding) -->
+        <!-- Section 4: Passion Projects -->
         <section id="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Passion Projects</h2>
-            <p class="legend"><svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg> Links with this icon open in a new tab.</p>
+            <p class="legend"><span class="ext-symbol" aria-hidden="true">&#8599;</span> Links with this symbol open in a new tab.</p>
 
             <!-- Project 1 -->
             <article class="passion-project">
-                <p class="project-meta"><time datetime="2026-02">2026</time> / Promo Video &bull; Official REV Socials</p>
+                <p class="project-meta"><time datetime="2026-02">February 2026</time> / Promo Video &bull; Official REV Socials</p>
                 <h3>UP Fair: REV Music Festival - Apl.de.ap (Artist Headliner)</h3>
                 <p>As the UP Fair 2026 REV Music Festival's Promotions Head, I directed, edited, and produced this Apl.de.ap promo to hype the crowd.
                 My vision was to pay homage to the <em lang="tl">OG Bebots ng Lansangan</em>—<span lang="tl">kababaihan</span>. #AbanteBabae</p>
@@ -137,7 +129,7 @@
                             allow="fullscreen">
                         </iframe>
                     </div>
-                    <p class="media-note">Video not loading? <a href="https://drive.google.com/file/d/1AKkxpidVA47kADQAA1rlGwR6CTI7Xsc1/view" target="_blank" rel="noopener">Watch it on Google Drive <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden">(opens in a new tab)</span></a></p>
+                    <p class="media-note">Video not loading? <a href="https://drive.google.com/file/d/1AKkxpidVA47kADQAA1rlGwR6CTI7Xsc1/view" target="_blank" rel="noopener">Watch it on Google Drive <span class="ext-symbol" aria-hidden="true">&#8599;</span><span class="visually-hidden">(opens in a new tab)</span></a></p>
                 </div>
             </article>
 
@@ -156,23 +148,22 @@
                             allow="fullscreen">
                         </iframe>
                     </div>
-                    <p class="media-note">Video not loading? <a href="https://drive.google.com/file/d/1BHW5_0meL2nxdbOysF0T9I0GsCN5laIY/view" target="_blank" rel="noopener">Watch it on Google Drive <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden">(opens in a new tab)</span></a></p>
+                    <p class="media-note">Video not loading? <a href="https://drive.google.com/file/d/1BHW5_0meL2nxdbOysF0T9I0GsCN5laIY/view" target="_blank" rel="noopener">Watch it on Google Drive <span class="ext-symbol" aria-hidden="true">&#8599;</span><span class="visually-hidden">(opens in a new tab)</span></a></p>
                 </div>
             </article>
 
             <!-- Project 3 -->
             <article class="passion-project">
-                <p class="project-meta"><time datetime="2026-02">2026</time> / Poster Design &bull; Official REV Socials</p>
+                <p class="project-meta"><time datetime="2026-02">February 2026</time> / Poster Design &bull; Official REV Socials</p>
                 <h3>UP Fair: REV Music Festival 2026 - Full Line Up Poster</h3>
                 <p>I designed this year's REV Music Festival artist lineup, ensuring it stayed on-brand and drove ticket sales.</p>
-                <div class="project-media-frame">
+                <div class="project-media-frame poster-frame">
                     <div class="image-poster">
-                        <!-- REMINDER: Add the specific headline artist names from your poster into the alt text below -->
                         <img src="https://drive.google.com/thumbnail?id=1hfkflmmH2QO1wkjgqGb_5ZcY7oIgGkN-&amp;sz=w500-h700"
-                        alt="UP Fair 2026 REV Music Festival full line-up poster designed by Gina Bola featuring headline OPM artists in yellow, pink, and bold festival typography."
+                        alt="UP Fair 2026 REV Music Festival full line-up poster designed by Gina Bola featuring Apl.de.ap, South Border, Over October, The Ridleys, and other OPM artists."
                         width="500" height="700">
                     </div>
-                    <p class="media-note">Image not loading? <a href="https://drive.google.com/file/d/1hfkflmmH2QO1wkjgqGb_5ZcY7oIgGkN-/view" target="_blank" rel="noopener">View it on Google Drive <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden">(opens in a new tab)</span></a></p>
+                    <p class="media-note">Image not loading? <a href="https://drive.google.com/file/d/1hfkflmmH2QO1wkjgqGb_5ZcY7oIgGkN-/view" target="_blank" rel="noopener">View it on Google Drive <span class="ext-symbol" aria-hidden="true">&#8599;</span><span class="visually-hidden">(opens in a new tab)</span></a></p>
                 </div>
             </article>
         </section>
@@ -181,11 +172,23 @@
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact</h2>
             <p>Wanna work with me? Let's connect! <span lang="tl" class="line-2">G ka na ba? G na 'yan!</span></p>
-            <p class="legend"><svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg> Links with this icon open in a new tab.</p>
+            <p class="legend"><span class="ext-symbol" aria-hidden="true">&#8599;</span> Links with this symbol open in a new tab.</p>
             <ul class="contact-list">
-                <li><a href="https://www.facebook.com/ginabola.08" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg> Facebook: Gina Bola <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden">(opens in a new tab)</span></a></li>
-                <li><a href="https://www.instagram.com/aginamotomsg/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram: @aginamotomsg <svg class="icon ext" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden">(opens in a new tab)</span></a></li>
-                <li><a href="mailto:ginabola.work@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Email: ginabola.work@gmail.com</a></li>
+                <li>
+                    <span class="contact-symbol" aria-hidden="true">f</span>
+                    <span class="contact-label">Facebook:</span>
+                    <a href="https://www.facebook.com/ginabola.08" target="_blank" rel="noopener">Gina Bola <span class="ext-symbol" aria-hidden="true">&#8599;</span><span class="visually-hidden">(opens in a new tab)</span></a>
+                </li>
+                <li>
+                    <span class="contact-symbol" aria-hidden="true">&#9678;</span>
+                    <span class="contact-label">Instagram:</span>
+                    <a href="https://www.instagram.com/aginamotomsg/" target="_blank" rel="noopener">@aginamotomsg <span class="ext-symbol" aria-hidden="true">&#8599;</span><span class="visually-hidden">(opens in a new tab)</span></a>
+                </li>
+                <li>
+                    <span class="contact-symbol" aria-hidden="true">&#9993;</span>
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:ginabola.work@gmail.com">ginabola.work@gmail.com</a>
+                </li>
             </ul>
         </section>
     </main>
@@ -193,11 +196,19 @@
     <!-- Footer -->
     <footer>
         <div class="wrap">
-            <p>&copy; 2026 Gina Bola. Made with glutathione, silymarin extract, and ginko biloba-e. What about yours? #EME</p>
+            <p>&copy; 2026 Gina Bola. Made with love and a little bit of chaotic inner voice.</p>
+            <details class="design-notes">
+                <summary>Why this site looks like this</summary>
+                <ul>
+                    <li><strong>Fonts:</strong> Poppins is a bold, geometric heading font that matches my eccentric humor. Nunito has soft curves that keep long paragraphs friendly to read.</li>
+                    <li><strong>Nailong-Inspired Palette (60-30-10):</strong> Warm Cream (#FFF8E7), Sunny Yellow (#F9AF3F), and Playful Pink (#FBA1C4) with Deep Brown (#4A2223) ink for strong WCAG contrast.</li>
+                    <li><strong>Sticker Look:</strong> Solid outlines and hard shadows reused across cards, like komiks panels and print stickers, so the chaos still follows one rule.</li>
+                </ul>
+            </details>
         </div>
     </footer>
 
     <!-- Back to top -->
-    <a class="back-to-top" href="#top"><span aria-hidden="true">↑</span> <span class="visually-hidden">Back to </span>top</a>
+    <a class="back-to-top" href="#top"><span aria-hidden="true">&uarr;</span> <span class="visually-hidden">Back to </span>top</a>
 </body>
 </html>
